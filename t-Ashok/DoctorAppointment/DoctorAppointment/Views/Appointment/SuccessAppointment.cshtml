@@ -1,0 +1,12 @@
+﻿@model DoctorAppointment.Models.Entities.Appointment
+
+@{
+    ViewBag.Title = "SuccessAppointment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<hr />
+<h2>Appointment Booked Succesfully.</h2>
+<p>Thanks,  <b>@Model.APatient.FirstName @Model.APatient.MiddleName @Model.APatient.LastName</b> for booking with Id <b>@Model.AID</b></p>
+<p>Schedule is <b>@Model.ADate.ToShortDateString()</b>&nbsp;&nbsp;<b>@Model.ATime.ToShortTimeString()</b></p>
+<hr />
